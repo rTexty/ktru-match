@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions
+    xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+    xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+    xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+    xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    id="Definitions_Ktru"
+    targetNamespace="http://tenderhack.example/ktru"
+    xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://www.omg.org/spec/BPMN/2.0/20100501/BPMN20.xsd">
+  <bpmn:collaboration id="Collaboration_Ktru">
+    <bpmn:participant id="Participant_Ktru" name="Сервис подбора КТРУ" processRef="Process_Ktru"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Process_Ktru" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_Ktru">
+      <bpmn:lane id="Lane_Supplier" name="Поставщик (UI)">
+        <bpmn:flowNodeRef>Start_Description</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Parse</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>UserTask_ChooseFamily</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>UserTask_Clarify</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>UserTask_AnswerEditUndo</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_CardReady</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>End_NoCode</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Service" name="Сервис (API + движок)">
+        <bpmn:flowNodeRef>ServiceTask_Fix</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_Search</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_FamilyFound</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_FamilyConfirmed</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_ExtractRules</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_ModelAvailable</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_Analyze</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_Bind</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_Compat</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_Narrow</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_Alive</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_Single</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_FillFields</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_Ready</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>ServiceTask_Recompute</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+
+    <bpmn:startEvent id="Start_Description" name="Описание товара введено">
+      <bpmn:outgoing>Flow_Start_Parse</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Task_Parse" name="Отправить описание (parse)">
+      <bpmn:incoming>Flow_Start_Parse</bpmn:incoming>
+      <bpmn:outgoing>Flow_Parse_Fix</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:serviceTask id="ServiceTask_Fix" name="Исправить раскладку и опечатки">
+      <bpmn:incoming>Flow_Parse_Fix</bpmn:incoming>
+      <bpmn:incoming>Flow_Recompute_Fix</bpmn:incoming>
+      <bpmn:outgoing>Flow_Fix_Search</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_Search" name="Найти семейства КТРУ (FTS5)">
+      <bpmn:incoming>Flow_Fix_Search</bpmn:incoming>
+      <bpmn:outgoing>Flow_Search_FamilyFound</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_FamilyFound" name="Семейства найдены?">
+      <bpmn:incoming>Flow_Search_FamilyFound</bpmn:incoming>
+      <bpmn:outgoing>Flow_NoHits_NoCode</bpmn:outgoing>
+      <bpmn:outgoing>Flow_Hits_FamilyConfirmed</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="Gateway_FamilyConfirmed" name="Семейство подтверждено?">
+      <bpmn:incoming>Flow_Hits_FamilyConfirmed</bpmn:incoming>
+      <bpmn:outgoing>Flow_FamilyNo_Choose</bpmn:outgoing>
+      <bpmn:outgoing>Flow_FamilyYes_Extract</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="UserTask_ChooseFamily" name="Выбрать группу товара">
+      <bpmn:incoming>Flow_FamilyNo_Choose</bpmn:incoming>
+      <bpmn:outgoing>Flow_Choose_Recompute</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="ServiceTask_ExtractRules" name="Извлечь факты (правила)">
+      <bpmn:incoming>Flow_FamilyYes_Extract</bpmn:incoming>
+      <bpmn:outgoing>Flow_Extract_ModelCheck</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_ModelAvailable" name="Модель извлечения доступна?">
+      <bpmn:incoming>Flow_Extract_ModelCheck</bpmn:incoming>
+      <bpmn:outgoing>Flow_ModelYes_Analyze</bpmn:outgoing>
+      <bpmn:outgoing>Flow_ModelNo_Bind</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:serviceTask id="ServiceTask_Analyze" name="Извлечь факты моделью (analyze) и проверить цитаты">
+      <bpmn:incoming>Flow_ModelYes_Analyze</bpmn:incoming>
+      <bpmn:outgoing>Flow_Analyze_Bind</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_Bind" name="Привязать факты к характеристикам КТРУ">
+      <bpmn:incoming>Flow_ModelNo_Bind</bpmn:incoming>
+      <bpmn:incoming>Flow_Analyze_Bind</bpmn:incoming>
+      <bpmn:outgoing>Flow_Bind_Compat</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_Compat" name="Проверить совместимость, конфликты, неправдоподобные значения">
+      <bpmn:incoming>Flow_Bind_Compat</bpmn:incoming>
+      <bpmn:outgoing>Flow_Compat_Narrow</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="ServiceTask_Narrow" name="Сузить кандидатов">
+      <bpmn:incoming>Flow_Compat_Narrow</bpmn:incoming>
+      <bpmn:outgoing>Flow_Narrow_Alive</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="Gateway_Alive" name="Есть подходящие позиции?">
+      <bpmn:incoming>Flow_Narrow_Alive</bpmn:incoming>
+      <bpmn:outgoing>Flow_AliveNo_NoCode</bpmn:outgoing>
+      <bpmn:outgoing>Flow_AliveYes_Single</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="Gateway_Single" name="Осталась одна конечная позиция?">
+      <bpmn:incoming>Flow_AliveYes_Single</bpmn:incoming>
+      <bpmn:outgoing>Flow_SingleNo_Clarify</bpmn:outgoing>
+      <bpmn:outgoing>Flow_SingleYes_Fill</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="UserTask_Clarify" name="Ответить на уточняющий вопрос">
+      <bpmn:incoming>Flow_SingleNo_Clarify</bpmn:incoming>
+      <bpmn:outgoing>Flow_Clarify_Recompute</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:task id="Task_FillFields" name="Заполнить поля: КТРУ / Портал / Новое">
+      <bpmn:incoming>Flow_SingleYes_Fill</bpmn:incoming>
+      <bpmn:outgoing>Flow_Fill_Ready</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="Gateway_Ready" name="Обязательные заполнены, блокеров нет?">
+      <bpmn:incoming>Flow_Fill_Ready</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReadyYes_CardReady</bpmn:outgoing>
+      <bpmn:outgoing>Flow_ReadyNo_AnswerEditUndo</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:userTask id="UserTask_AnswerEditUndo" name="Ответить / исправить поле / отменить">
+      <bpmn:incoming>Flow_ReadyNo_AnswerEditUndo</bpmn:incoming>
+      <bpmn:outgoing>Flow_AnswerEditUndo_Recompute</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="ServiceTask_Recompute" name="Пересчитать с новой ревизией (CAS)">
+      <bpmn:incoming>Flow_Choose_Recompute</bpmn:incoming>
+      <bpmn:incoming>Flow_Clarify_Recompute</bpmn:incoming>
+      <bpmn:incoming>Flow_AnswerEditUndo_Recompute</bpmn:incoming>
+      <bpmn:outgoing>Flow_Recompute_Fix</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="End_CardReady" name="Карточка готова">
+      <bpmn:incoming>Flow_ReadyYes_CardReady</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="End_NoCode" name="Код не найден (вне каталога)">
+      <bpmn:incoming>Flow_NoHits_NoCode</bpmn:incoming>
+      <bpmn:incoming>Flow_AliveNo_NoCode</bpmn:incoming>
+    </bpmn:endEvent>
+
+    <bpmn:sequenceFlow id="Flow_Start_Parse" sourceRef="Start_Description" targetRef="Task_Parse"/>
+    <bpmn:sequenceFlow id="Flow_Parse_Fix" sourceRef="Task_Parse" targetRef="ServiceTask_Fix"/>
+    <bpmn:sequenceFlow id="Flow_Fix_Search" sourceRef="ServiceTask_Fix" targetRef="ServiceTask_Search"/>
+    <bpmn:sequenceFlow id="Flow_Search_FamilyFound" sourceRef="ServiceTask_Search" targetRef="Gateway_FamilyFound"/>
+    <bpmn:sequenceFlow id="Flow_NoHits_NoCode" name="нет" sourceRef="Gateway_FamilyFound" targetRef="End_NoCode"/>
+    <bpmn:sequenceFlow id="Flow_Hits_FamilyConfirmed" name="да" sourceRef="Gateway_FamilyFound" targetRef="Gateway_FamilyConfirmed"/>
+    <bpmn:sequenceFlow id="Flow_FamilyNo_Choose" name="нет" sourceRef="Gateway_FamilyConfirmed" targetRef="UserTask_ChooseFamily"/>
+    <bpmn:sequenceFlow id="Flow_FamilyYes_Extract" name="да" sourceRef="Gateway_FamilyConfirmed" targetRef="ServiceTask_ExtractRules"/>
+    <bpmn:sequenceFlow id="Flow_Choose_Recompute" sourceRef="UserTask_ChooseFamily" targetRef="ServiceTask_Recompute"/>
+    <bpmn:sequenceFlow id="Flow_Extract_ModelCheck" sourceRef="ServiceTask_ExtractRules" targetRef="Gateway_ModelAvailable"/>
+    <bpmn:sequenceFlow id="Flow_ModelYes_Analyze" name="да" sourceRef="Gateway_ModelAvailable" targetRef="ServiceTask_Analyze"/>
+    <bpmn:sequenceFlow id="Flow_ModelNo_Bind" name="нет" sourceRef="Gateway_ModelAvailable" targetRef="ServiceTask_Bind"/>
+    <bpmn:sequenceFlow id="Flow_Analyze_Bind" sourceRef="ServiceTask_Analyze" targetRef="ServiceTask_Bind"/>
+    <bpmn:sequenceFlow id="Flow_Bind_Compat" sourceRef="ServiceTask_Bind" targetRef="ServiceTask_Compat"/>
+    <bpmn:sequenceFlow id="Flow_Compat_Narrow" sourceRef="ServiceTask_Compat" targetRef="ServiceTask_Narrow"/>
+    <bpmn:sequenceFlow id="Flow_Narrow_Alive" sourceRef="ServiceTask_Narrow" targetRef="Gateway_Alive"/>
+    <bpmn:sequenceFlow id="Flow_AliveNo_NoCode" name="нет" sourceRef="Gateway_Alive" targetRef="End_NoCode"/>
+    <bpmn:sequenceFlow id="Flow_AliveYes_Single" name="да" sourceRef="Gateway_Alive" targetRef="Gateway_Single"/>
+    <bpmn:sequenceFlow id="Flow_SingleNo_Clarify" name="нет" sourceRef="Gateway_Single" targetRef="UserTask_Clarify"/>
+    <bpmn:sequenceFlow id="Flow_SingleYes_Fill" name="да" sourceRef="Gateway_Single" targetRef="Task_FillFields"/>
+    <bpmn:sequenceFlow id="Flow_Clarify_Recompute" sourceRef="UserTask_Clarify" targetRef="ServiceTask_Recompute"/>
+    <bpmn:sequenceFlow id="Flow_Fill_Ready" sourceRef="Task_FillFields" targetRef="Gateway_Ready"/>
+    <bpmn:sequenceFlow id="Flow_ReadyYes_CardReady" name="да" sourceRef="Gateway_Ready" targetRef="End_CardReady"/>
+    <bpmn:sequenceFlow id="Flow_ReadyNo_AnswerEditUndo" name="нет" sourceRef="Gateway_Ready" targetRef="UserTask_AnswerEditUndo"/>
+    <bpmn:sequenceFlow id="Flow_AnswerEditUndo_Recompute" sourceRef="UserTask_AnswerEditUndo" targetRef="ServiceTask_Recompute"/>
+    <bpmn:sequenceFlow id="Flow_Recompute_Fix" sourceRef="ServiceTask_Recompute" targetRef="ServiceTask_Fix"/>
+  </bpmn:process>
+
+  <bpmndi:BPMNDiagram id="Diagram_Ktru">
+    <bpmndi:BPMNPlane id="Plane_Ktru" bpmnElement="Collaboration_Ktru">
+      <bpmndi:BPMNShape id="Shape_Participant_Ktru" bpmnElement="Participant_Ktru" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="3400" height="640"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Supplier" bpmnElement="Lane_Supplier" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="3400" height="280"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Lane_Service" bpmnElement="Lane_Service" isHorizontal="true">
+        <dc:Bounds x="160" y="360" width="3400" height="360"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Start_Description" bpmnElement="Start_Description">
+        <dc:Bounds x="222" y="202" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_Parse" bpmnElement="Task_Parse">
+        <dc:Bounds x="320" y="180" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_UserTask_ChooseFamily" bpmnElement="UserTask_ChooseFamily">
+        <dc:Bounds x="1060" y="180" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_UserTask_Clarify" bpmnElement="UserTask_Clarify">
+        <dc:Bounds x="2660" y="180" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_UserTask_AnswerEditUndo" bpmnElement="UserTask_AnswerEditUndo">
+        <dc:Bounds x="3060" y="180" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_CardReady" bpmnElement="End_CardReady">
+        <dc:Bounds x="3382" y="202" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End_NoCode" bpmnElement="End_NoCode">
+        <dc:Bounds x="932" y="622" width="36" height="36"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Fix" bpmnElement="ServiceTask_Fix">
+        <dc:Bounds x="460" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Search" bpmnElement="ServiceTask_Search">
+        <dc:Bounds x="660" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_FamilyFound" bpmnElement="Gateway_FamilyFound">
+        <dc:Bounds x="925" y="455" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_FamilyConfirmed" bpmnElement="Gateway_FamilyConfirmed">
+        <dc:Bounds x="1125" y="455" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_ExtractRules" bpmnElement="ServiceTask_ExtractRules">
+        <dc:Bounds x="1260" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_ModelAvailable" bpmnElement="Gateway_ModelAvailable">
+        <dc:Bounds x="1525" y="455" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Analyze" bpmnElement="ServiceTask_Analyze">
+        <dc:Bounds x="1660" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Bind" bpmnElement="ServiceTask_Bind">
+        <dc:Bounds x="1860" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Compat" bpmnElement="ServiceTask_Compat">
+        <dc:Bounds x="2060" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Narrow" bpmnElement="ServiceTask_Narrow">
+        <dc:Bounds x="2260" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_Alive" bpmnElement="Gateway_Alive">
+        <dc:Bounds x="2525" y="455" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_Single" bpmnElement="Gateway_Single">
+        <dc:Bounds x="2725" y="455" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Task_FillFields" bpmnElement="Task_FillFields">
+        <dc:Bounds x="2860" y="440" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway_Ready" bpmnElement="Gateway_Ready">
+        <dc:Bounds x="3125" y="455" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_ServiceTask_Recompute" bpmnElement="ServiceTask_Recompute">
+        <dc:Bounds x="240" y="600" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+
+      <bpmndi:BPMNEdge id="Edge_Start_Parse" bpmnElement="Flow_Start_Parse">
+        <di:waypoint x="258" y="220"/>
+        <di:waypoint x="320" y="220"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Parse_Fix" bpmnElement="Flow_Parse_Fix">
+        <di:waypoint x="410" y="260"/>
+        <di:waypoint x="410" y="420"/>
+        <di:waypoint x="550" y="420"/>
+        <di:waypoint x="550" y="440"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Fix_Search" bpmnElement="Flow_Fix_Search">
+        <di:waypoint x="640" y="480"/>
+        <di:waypoint x="660" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Search_FamilyFound" bpmnElement="Flow_Search_FamilyFound">
+        <di:waypoint x="840" y="480"/>
+        <di:waypoint x="925" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_NoHits_NoCode" bpmnElement="Flow_NoHits_NoCode">
+        <di:waypoint x="950" y="505"/>
+        <di:waypoint x="950" y="622"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Hits_FamilyConfirmed" bpmnElement="Flow_Hits_FamilyConfirmed">
+        <di:waypoint x="975" y="480"/>
+        <di:waypoint x="1125" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_FamilyNo_Choose" bpmnElement="Flow_FamilyNo_Choose">
+        <di:waypoint x="1150" y="455"/>
+        <di:waypoint x="1150" y="260"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_FamilyYes_Extract" bpmnElement="Flow_FamilyYes_Extract">
+        <di:waypoint x="1175" y="480"/>
+        <di:waypoint x="1260" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Choose_Recompute" bpmnElement="Flow_Choose_Recompute">
+        <di:waypoint x="1100" y="260"/>
+        <di:waypoint x="1100" y="300"/>
+        <di:waypoint x="1020" y="300"/>
+        <di:waypoint x="1020" y="610"/>
+        <di:waypoint x="420" y="610"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Extract_ModelCheck" bpmnElement="Flow_Extract_ModelCheck">
+        <di:waypoint x="1440" y="480"/>
+        <di:waypoint x="1525" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_ModelYes_Analyze" bpmnElement="Flow_ModelYes_Analyze">
+        <di:waypoint x="1575" y="480"/>
+        <di:waypoint x="1660" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_ModelNo_Bind" bpmnElement="Flow_ModelNo_Bind">
+        <di:waypoint x="1550" y="505"/>
+        <di:waypoint x="1550" y="540"/>
+        <di:waypoint x="1950" y="540"/>
+        <di:waypoint x="1950" y="440"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Analyze_Bind" bpmnElement="Flow_Analyze_Bind">
+        <di:waypoint x="1840" y="480"/>
+        <di:waypoint x="1860" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Bind_Compat" bpmnElement="Flow_Bind_Compat">
+        <di:waypoint x="2040" y="480"/>
+        <di:waypoint x="2060" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Compat_Narrow" bpmnElement="Flow_Compat_Narrow">
+        <di:waypoint x="2240" y="480"/>
+        <di:waypoint x="2260" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Narrow_Alive" bpmnElement="Flow_Narrow_Alive">
+        <di:waypoint x="2440" y="480"/>
+        <di:waypoint x="2525" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_AliveNo_NoCode" bpmnElement="Flow_AliveNo_NoCode">
+        <di:waypoint x="2550" y="505"/>
+        <di:waypoint x="2550" y="560"/>
+        <di:waypoint x="1000" y="560"/>
+        <di:waypoint x="1000" y="640"/>
+        <di:waypoint x="968" y="640"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_AliveYes_Single" bpmnElement="Flow_AliveYes_Single">
+        <di:waypoint x="2575" y="480"/>
+        <di:waypoint x="2725" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SingleNo_Clarify" bpmnElement="Flow_SingleNo_Clarify">
+        <di:waypoint x="2750" y="455"/>
+        <di:waypoint x="2750" y="260"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_SingleYes_Fill" bpmnElement="Flow_SingleYes_Fill">
+        <di:waypoint x="2775" y="480"/>
+        <di:waypoint x="2860" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Clarify_Recompute" bpmnElement="Flow_Clarify_Recompute">
+        <di:waypoint x="2700" y="260"/>
+        <di:waypoint x="2700" y="300"/>
+        <di:waypoint x="2650" y="300"/>
+        <di:waypoint x="2650" y="670"/>
+        <di:waypoint x="240" y="670"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Fill_Ready" bpmnElement="Flow_Fill_Ready">
+        <di:waypoint x="3040" y="480"/>
+        <di:waypoint x="3125" y="480"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_ReadyYes_CardReady" bpmnElement="Flow_ReadyYes_CardReady">
+        <di:waypoint x="3175" y="480"/>
+        <di:waypoint x="3400" y="480"/>
+        <di:waypoint x="3400" y="238"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_ReadyNo_AnswerEditUndo" bpmnElement="Flow_ReadyNo_AnswerEditUndo">
+        <di:waypoint x="3150" y="455"/>
+        <di:waypoint x="3150" y="260"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_AnswerEditUndo_Recompute" bpmnElement="Flow_AnswerEditUndo_Recompute">
+        <di:waypoint x="3200" y="260"/>
+        <di:waypoint x="3200" y="300"/>
+        <di:waypoint x="3260" y="300"/>
+        <di:waypoint x="3260" y="700"/>
+        <di:waypoint x="360" y="700"/>
+        <di:waypoint x="360" y="680"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Recompute_Fix" bpmnElement="Flow_Recompute_Fix">
+        <di:waypoint x="330" y="600"/>
+        <di:waypoint x="330" y="480"/>
+        <di:waypoint x="460" y="480"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

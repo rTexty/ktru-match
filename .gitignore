@@ -1,0 +1,32 @@
+# Compose / local env
+.env
+.env.*
+!.env.example
+
+# Local configs with secrets
+backend/settings.yaml
+
+# OS / logs
+.DS_Store
+*.log
+
+# Local worker/runtime state and reproducible build artifacts
+.swarm-env
+.handoff/
+.claude-swarm/
+.ktru-build/
+**/.venv/
+.cache/
+.pnpm-store/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local catalog inputs and credentials
+/data/
+*_API_KEY

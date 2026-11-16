@@ -1,0 +1,6537 @@
+{
+ "source": {
+  "path": "head_raw.jsonl",
+  "sha256": "86ef8d1983a748274a1561b8d82f7cccb3d6253d5f4d35d5f5960094177668df",
+  "origin": "public cards https://old.zakupki.mos.ru/api/Cssp/Sku/GetEntity"
+ },
+ "nouns": {
+  "action": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "affenzahn": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "asics": {
+   "okpd2": "15.20.21.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "bagmaster": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "bags": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "barbie": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "ben": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "brauberg": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "care": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "cars": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "centrum": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "cапог": {
+   "okpd2": "15.20.11.113",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "cарафан": {
+   "okpd2": "14.13.14.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "cумк": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "deuter": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "disney": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "erich": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "faber": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "grizzly": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "hama": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "hatber": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "herlitz": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "jetapro": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "jpc": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "jpr": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "magtaller": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "mary": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "maxi": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "mcneill": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "milan": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "motogp": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "nike": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "nordski": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "patrick": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "peppa": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "pixie": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "planes": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "polar": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "proff": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "reborn": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "respect": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "santoro": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "seventeen": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "shopkins": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "skip": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "spider": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "steiner": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "sternbauer": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "take": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "target": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "thorka": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "tiger": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "transformers": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "trolls": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "trunki": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "ufo": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "universal": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "vebtoy": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "walker": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "world": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "you": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "zipit": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "аксельбант": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "ант": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бабочк": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "балаклав": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "балетк": {
+   "okpd2": "15.20.13.170",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бандаж": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бандан": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бант": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "баул": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бейк": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бейсболк": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "берет": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "беруш": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "берц": {
+   "okpd2": "15.20.13.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бескозырк": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бисер": {
+   "okpd2": "14.19.23.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "блуз": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "блузк": {
+   "okpd2": "14.14.2",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "блузон": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бод": {
+   "okpd2": "14.19.11",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бордшорт": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "босоножк": {
+   "okpd2": "15.20.13.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "ботильон": {
+   "okpd2": "15.20.13.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "браслет": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "брелок": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бридж": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бронежилет": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "брош": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "брюк": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "бумажник": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бутс": {
+   "okpd2": "15.20.13.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бушлат": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бюстгалтер": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "бюстгальтер": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "валенк": {
+   "okpd2": "15.20.14.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "варежк": {
+   "okpd2": "14.19.13.000",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "вачег": {
+   "okpd2": "14.12.30.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "велосипедк": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "веревк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ветровк": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "визитниц": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "вкладыш": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "водолазк": {
+   "okpd2": "14.19.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "воротник": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "галстук": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "галун": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "гамаш": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "гетр": {
+   "okpd2": "14.31.10.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "гольф": {
+   "okpd2": "14.31.10.122",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "держател": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "джаз": {
+   "okpd2": "15.20.21.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "джемпер": {
+   "okpd2": "14.39.10.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "джинс": {
+   "okpd2": "14.13.24",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "дождевик": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "дутик": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "жилет": {
+   "okpd2": "14.20.10.180",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "жилетк": {
+   "okpd2": "14.20.10.180",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "заготовк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "зажим": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "заклепк": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "заколк": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "замок": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "запонк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "застежк": {
+   "okpd2": "32.99.23.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "знак": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "значок": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "зонт": {
+   "okpd2": "32.99.21.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кальсон": {
+   "okpd2": "14.12.3",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "капр": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "карабин": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кардиган": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "картхолдер": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "каск": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "каскетк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "кашн": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кед": {
+   "okpd2": "15.20.21.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "кейс": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кеп": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кист": {
+   "okpd2": "14.19.23.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кител": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "клатч": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "клипс": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "клиш": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ключниц": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кляммер": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "кнопк": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кобур": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "коврик": {
+   "okpd2": "15.20.32.121",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "кокард": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "колгот": {
+   "okpd2": "14.31.10.121",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "колготк": {
+   "okpd2": "14.31.10.121",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "колорит": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "колпак": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кольц": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "комбинезон": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "контр": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "конференц": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "концевик": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "корсаж": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "корсет": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "косметичк": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "костюм": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "косынк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "котоф": {
+   "okpd2": "15.20.13.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "кофр": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кофт": {
+   "okpd2": "14.39.10.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кофточк": {
+   "okpd2": "14.19.11.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кошелек": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "краг": {
+   "okpd2": "14.12.30.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "крокс": {
+   "okpd2": "15.20.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кроссовк": {
+   "okpd2": "15.20.21.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ксз": {
+   "okpd2": "14.12.30.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "кубанк": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "купальник": {
+   "okpd2": "14.19.12.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "курсовк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "куртк": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "лебедк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "легинс": {
+   "okpd2": "14.31.10.121",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "лент": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "лини": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "липучк": {
+   "okpd2": "32.99.23.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ложк": {
+   "okpd2": "15.20.40",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "лонгсвил": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "лонгслив": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "лосин": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "лофер": {
+   "okpd2": "15.20.13.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "лычк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "люверс": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "майк": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "манти": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "маск": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "маш": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "мокасин": {
+   "okpd2": "15.20.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "молни": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "мульт": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "набородник": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "нагрудник": {
+   "okpd2": "14.39.10",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "накидк": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "накладк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "наклейк": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "наколенник": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "нарукавник": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "наушник": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "нашивк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "несессер": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "номер": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "носк": {
+   "okpd2": "14.31.10.111",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "обложк": {
+   "okpd2": "22.29.29",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "одежд": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "олимпийк": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "очк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пакет": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "палантин": {
+   "okpd2": "14.20.10.635",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "пальт": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "панам": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "панталон": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пантолет": {
+   "okpd2": "15.20.11.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "папк": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "парк": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "патрон": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пеленк": {
+   "okpd2": "14.19.11",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пенал": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "передник": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "перчатк": {
+   "okpd2": "14.12.30.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "петл": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "петлиц": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "пиджак": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "пижам": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пилотк": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пифагор": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "плавк": {
+   "okpd2": "14.19.12.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пластин": {
+   "okpd2": "32.99.11.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "платок": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "плать": {
+   "okpd2": "14.13.14.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "плащ": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пленк": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "повязк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "погон": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "подвеск": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "подворотничок": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "подследник": {
+   "okpd2": "14.31.10.111",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "подсумок": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "подтяжк": {
+   "okpd2": "14.19.23.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "подшлемник": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пол": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ползунк": {
+   "okpd2": "14.19.11",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "полуботинк": {
+   "okpd2": "15.20.13.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "полукед": {
+   "okpd2": "15.20.21.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "полукольц": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "полукомбинезон": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "полумаск": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "полупальт": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "полушубок": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "понч": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "портмон": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "портфел": {
+   "okpd2": "15.12.12.191",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пояс": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "предфильтр": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "привяз": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пряжк": {
+   "okpd2": "25.99.25",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пуговиц": {
+   "okpd2": "32.99.23.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пукл": {
+   "okpd2": "32.99.23.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "пуловер": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "ранец": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "распашонк": {
+   "okpd2": "14.19.11.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "резин": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "резинк": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "рейтуз": {
+   "okpd2": "14.31.10.121",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ремен": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "респиратор": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "ретуз": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "рукавиц": {
+   "okpd2": "14.12.30.150",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "рюкзак": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "саб": {
+   "okpd2": "15.20.13.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "самоспасател": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "сандали": {
+   "okpd2": "15.20.13.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "сапог": {
+   "okpd2": "15.20.13.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "сапожк": {
+   "okpd2": "15.20.13.170",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "сарафан": {
+   "okpd2": "14.13.14.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "светофильтр": {
+   "okpd2": "32.99.11.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "свиншот": {
+   "okpd2": "14.39.10.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "свитер": {
+   "okpd2": "14.39.10",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "свитшот": {
+   "okpd2": "14.14.13.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "серьг": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "сетк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "сиз": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "систем": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "сланц": {
+   "okpd2": "15.20.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "слип": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "слипон": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "слэп": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "снуд": {
+   "okpd2": "14.20.10.635",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "сорочк": {
+   "okpd2": "14.14.11.000",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "составник": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "спец": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "средств": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "стекл": {
+   "okpd2": "32.99.11.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "стельк": {
+   "okpd2": "15.20.40",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "страз": {
+   "okpd2": "14.19.23.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "стрем": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "строп": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "сумк": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "сумочк": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "суппорт": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "тайтс": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "тапк": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "тапочк": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "тельняшк": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "тенниск": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "термобель": {
+   "okpd2": "14.12.3",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "термокомплект": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "термокофт": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "термонаклейк": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "тесьм": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "толстовк": {
+   "okpd2": "14.19.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "топ": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "топик": {
+   "okpd2": "14.14.22.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "тренчик": {
+   "okpd2": "14.19.23.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "три": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "трик": {
+   "okpd2": "14.19.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "трикотаж": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "трус": {
+   "okpd2": "14.14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "тубус": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "туник": {
+   "okpd2": "14.13.14.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "туфл": {
+   "okpd2": "15.20.13.170",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "убор": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "угг": {
+   "okpd2": "15.20.13.170",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "униформ": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "унт": {
+   "okpd2": "15.20.13.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "устройств": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "фальш": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "фальшпогон": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "фартук": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "феникс": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "фильтр": {
+   "okpd2": "32.99.11.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "форм": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "форменк": {
+   "okpd2": "14.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "фоторюкзак": {
+   "okpd2": "15.12.12.192",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "фотосумк": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "фуражк": {
+   "okpd2": "14.12",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "футболк": {
+   "okpd2": "14.14.30.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "футляр": {
+   "okpd2": "15.12.12.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "фуфайк": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "хольнитен": {
+   "okpd2": "32.99.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "худ": {
+   "okpd2": "14.14.13.120",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "цепочк": {
+   "okpd2": "14.19.23.210",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "чемодан": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "чепчик": {
+   "okpd2": "14.19.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "чехл": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "чехол": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "чулк": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "чулок": {
+   "okpd2": "14.12.30.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "чун": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шапк": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шапочк": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "шарф": {
+   "okpd2": "14.20.10.635",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шеврон": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "шиповк": {
+   "okpd2": "15.20.21.140",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "школ": {
+   "okpd2": "14.13",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлем": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлепанц": {
+   "okpd2": "15.20.14.110",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "шлепк": {
+   "okpd2": "15.20.11.130",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шляп": {
+   "okpd2": "14.19.4",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шнур": {
+   "okpd2": "13.96.17.133",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "шнурк": {
+   "okpd2": "15.20.40",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "шопер": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шоппер": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "шорт": {
+   "okpd2": "14.13.1",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "штан": {
+   "okpd2": "14.13.24",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 2
+  },
+  "щиток": {
+   "okpd2": "32.99.11.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "экзоскелет": {
+   "okpd2": "32.99.11.199",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "эко": {
+   "okpd2": "15.12.12.190",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "экран": {
+   "okpd2": "32.99.11.160",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "элемент": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "эмблем": {
+   "okpd2": "14.19.23",
+   "domain": "clothing",
+   "cards": 3,
+   "agree": 3
+  },
+  "cтеллаж": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "cтойк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "cтол": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "kallax": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "pulse": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "samir": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "style": {
+   "okpd2": "31.01.12.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "uno": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "акк": {
+   "okpd2": "31.01.12.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "аксессуар": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "алекс": {
+   "okpd2": "31.03.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "антресол": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "антрессол": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "аптечк": {
+   "okpd2": "31.01.11.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "арг": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "арт": {
+   "okpd2": "31.09.13.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "баз": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "банкетк": {
+   "okpd2": "31.09.13.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "банкеток": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "баннер": {
+   "okpd2": "31.09",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "барьер": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "бенч": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "бизишкаф": {
+   "okpd2": "31.09.13.149",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "боковин": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "болт": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "бортик": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "брифинг": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "буклетниц": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "бусинк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "буфет": {
+   "okpd2": "31.01.12.139",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ванн": {
+   "okpd2": "31.02.10",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "вариант": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "вешал": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "вешалк": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "винт": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "витрин": {
+   "okpd2": "31.09.11.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "втулк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "вывеск": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "выдвижени": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "выставк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "газ": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "газлифт": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "гайк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "гардероб": {
+   "okpd2": "31.01.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "гарнитур": {
+   "okpd2": "31.02.10.140",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "горк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "горшечниц": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "греденци": {
+   "okpd2": "31.01.12.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "групп": {
+   "okpd2": "31.09.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "демпфер": {
+   "okpd2": "22.29.26.111",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "детал": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "диван": {
+   "okpd2": "31.09.12.110",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "диспл": {
+   "okpd2": "31.09.11.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "дмк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "доводчик": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "доп": {
+   "okpd2": "31.09.11",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "дорожк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "доск": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "дуб": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "европартнер": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "заглушк": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "задвижк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "защелк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "зеркалодержател": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "золушк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "изголовь": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кабел": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кабин": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кабинет": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кабинк": {
+   "okpd2": "32.99.59.000",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "каллакс": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "камер": {
+   "okpd2": "31.01.11.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "карман": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кармашк": {
+   "okpd2": "31.01.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "карт": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "картотек": {
+   "okpd2": "31.01.11.123",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кассетниц": {
+   "okpd2": "31.01.11.122",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кафедр": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "квадрат": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кдм": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кешбокс": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "клин": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кож": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "колонн": {
+   "okpd2": "31.01.12.139",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ком": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "комод": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "композици": {
+   "okpd2": "31.01.12.139",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "конвейер": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "консол": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "конструкци": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "конфирмат": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "корпус": {
+   "okpd2": "31.01.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "креденци": {
+   "okpd2": "31.01.12.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "крепеж": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кресл": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "крестовин": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кроват": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кроватк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кромк": {
+   "okpd2": "22.29.26.111",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кронштейн": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "крючк": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "крючок": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кухн": {
+   "okpd2": "31.02.10.140",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "кушетк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "кэшбокс": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "лавк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "лавочк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ламел": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "лар": {
+   "okpd2": "31.01.11.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "лдсп": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "лег": {
+   "okpd2": "31.01.12.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "лежак": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "лесенк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "лист": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "локер": {
+   "okpd2": "31.01.12.139",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "лоток": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "лючок": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "магазин": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "магнит": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "манеж": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "материал": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "матрас": {
+   "okpd2": "31.03.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "матрац": {
+   "okpd2": "31.03.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "мебел": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "мебельсон": {
+   "okpd2": "31.01.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "менсолодержател": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "метал": {
+   "okpd2": "31.09.11",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "металлокаркас": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "механизм": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "мин": {
+   "okpd2": "31.02.10.140",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "монтаж": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "навес": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "надежд": {
+   "okpd2": "31.01.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "надставк": {
+   "okpd2": "31.09.13.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "надстройк": {
+   "okpd2": "31.01.12",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "наконечник": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "накопител": {
+   "okpd2": "31.09.11.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "направляющ": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "нар": {
+   "okpd2": "31.09.12.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "настил": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ниш": {
+   "okpd2": "31.09.11.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ног": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ножк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "номерок": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "нсх": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "обувниц": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ограничител": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "опор": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "островок": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "отбойник": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "парт": {
+   "okpd2": "31.01.12.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "пенальниц": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "перегородк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "передвижени": {
+   "okpd2": "31.09.11",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "переход": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "пирамид": {
+   "okpd2": "25.99.21.112",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "плаз": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "плакат": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "планк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "платформ": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "плечик": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "плит": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "плоск": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "площадк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "подвес": {
+   "okpd2": "31.09.13",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "подиум": {
+   "okpd2": "31.09.11.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "подлокотник": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "подпятник": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "подстоль": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "подтоварник": {
+   "okpd2": "31.02.10",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "полик": {
+   "okpd2": "31.09.11.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "полк": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "полкодержател": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "полок": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "полоск": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "полотенечниц": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "полотеничниц": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "полочк": {
+   "okpd2": "31.09.11.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "полукресл": {
+   "okpd2": "31.01.12.160",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "полустеллаж": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "поп": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "поперечин": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "поручен": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "пост": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "постамат": {
+   "okpd2": "25.99.21.110",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "постамент": {
+   "okpd2": "31.09.14.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "посудосушител": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "практик": {
+   "okpd2": "31.01.11.123",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "пресс": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "прессвол": {
+   "okpd2": "31.09",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "приставк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "промостойк": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "профил": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "пуф": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "пуфик": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "пуфлик": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "раздевалк": {
+   "okpd2": "31.01",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "разделител": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "рамк": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "раскладушк": {
+   "okpd2": "31.09.11.110",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "раскос": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "регулирующаяс": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "рейк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "рельс": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ремкомплект": {
+   "okpd2": "28.22.18.390",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ресепшен": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ресепшн": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "рецепшн": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "решетк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ролик": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ролл": {
+   "okpd2": "31.09",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "роллап": {
+   "okpd2": "31.09",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ручк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "сатурн": {
+   "okpd2": "31.09.13.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "связ": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "связк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "сегмент": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "сейф": {
+   "okpd2": "25.99.21.110",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "сектор": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "секци": {
+   "okpd2": "31.01.11.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "серебр": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "скамейк": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "скамь": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "скоб": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "соединител": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "спинк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "спорт": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "спортуголок": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "спрф": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стал": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "станок": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "станци": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стел": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стелаж": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стен": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стенд": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стенк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стойк": {
+   "okpd2": "31.09.11.120",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стол": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "столешниц": {
+   "okpd2": "31.02.10.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "столик": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стопор": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стремянк": {
+   "okpd2": "31.0",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стул": {
+   "okpd2": "31.01.11.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "стуль": {
+   "okpd2": "31.01.11.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стф": {
+   "okpd2": "31.09.11",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "стяжк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "сундук": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "сушилк": {
+   "okpd2": "31.02.10.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "сушк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "табличк": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "табурет": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "тахт": {
+   "okpd2": "31.09.12.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "тв": {
+   "okpd2": "31.09.13.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "толкател": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "траверc": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "транспортер": {
+   "okpd2": "31.02.10",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "трибун": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "труб": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "тумб": {
+   "okpd2": "31.01.12.150",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "угол": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "уголк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "уголок": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "угольник": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "указател": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "умк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "упор": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "урн": {
+   "okpd2": "32.99.59.000",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "установк": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "фальшпанел": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "фасад": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "фиксатор": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "фланец": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "фригобар": {
+   "okpd2": "31.09.13.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "фронтал": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "фурнитур": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "футорк": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "хранилищ": {
+   "okpd2": "31.01.11.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "царг": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "цвет": {
+   "okpd2": "31.01.12.131",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "цветок": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "цветочниц": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "центр": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "цокол": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "част": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шезлонг": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шин": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ширм": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шкант": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шкаф": {
+   "okpd2": "31.01.12.139",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шкафдл": {
+   "okpd2": "31.09.14.110",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шкафчик": {
+   "okpd2": "31.01.11.121",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "школьник": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "шпингалет": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шпон": {
+   "okpd2": "16.29.14.199",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "штанг": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "штангодержател": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "шток": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "штор": {
+   "okpd2": "32.99.59.000",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "щит": {
+   "okpd2": "32.99.53.190",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "эдельвейс": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "экополк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "экспозитор": {
+   "okpd2": "28.99.3",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "эксцентрик": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "эрг": {
+   "okpd2": "31.01.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "этажерк": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "яйц": {
+   "okpd2": "31.09.1",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 3
+  },
+  "ярус": {
+   "okpd2": "25.72.14.130",
+   "domain": "furniture",
+   "cards": 3,
+   "agree": 2
+  },
+  "ag": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "anza": {
+   "okpd2": "32.91.19.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "arinst": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "beorol": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "berger": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "castolin": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "color": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "digiphone": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "dremel": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "felder": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "gross": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "hans": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "harris": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "kemppi": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "kraft": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "kraftool": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "licota": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "norgau": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "olfa": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ph": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "santool": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "sata": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "sparta": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "stihl": {
+   "okpd2": "25.73.20.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "testo": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "total": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "volkel": {
+   "okpd2": "25.73.60",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "wedo": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "абразив": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "автомат": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "аккум": {
+   "okpd2": "25.73.30.299",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "амперметр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "анализатор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "анемометр": {
+   "okpd2": "26.51.53.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "аппарат": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ареометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бак": {
+   "okpd2": "28.29",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "баллон": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бачок": {
+   "okpd2": "28.29",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бетонол": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бибер": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "бипод": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бит": {
+   "okpd2": "25.73.30.299",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бокорез": {
+   "okpd2": "25.73.30.164",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "болторез": {
+   "okpd2": "25.73.30.164",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бор": {
+   "okpd2": "25.73.40.160",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "борфрез": {
+   "okpd2": "25.73.40.160",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "брусок": {
+   "okpd2": "23.91.11.130",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бумаг": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бур": {
+   "okpd2": "25.73.40.111",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "буссол": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бухт": {
+   "okpd2": "25.73.20.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "бюгел": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вал": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "валик": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ванночк": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "варяг": {
+   "okpd2": "32.91.19.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "ват": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ваттметр": {
+   "okpd2": "26.51.45.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вентил": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "венчик": {
+   "okpd2": "28.24.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "верстак": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вес": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "вех": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вибратор": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "виброметр": {
+   "okpd2": "26.51.12",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вид": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "видеоскоп": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "видеоэндоскоп": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вилк": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "винтоверт": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вольтамперфазометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "вороток": {
+   "okpd2": "25.73.30.184",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "выключател": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "выпрямител": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "высотомер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "газоанализатор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "гайковерт": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "гвозд": {
+   "okpd2": "25.93.14.140",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "гвоздодер": {
+   "okpd2": "25.73.30.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "генератор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "гигрометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "гильотин": {
+   "okpd2": "28.41.33.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "гладилк": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "глубиномер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "гнезд": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "головк": {
+   "okpd2": "25.73.30.176",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "гравер": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "губк": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "дальномер": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "датчик": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "двигател": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "державк": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "детектор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "дефектоскоп": {
+   "okpd2": "26.51.66.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "динамометр": {
+   "okpd2": "26.51.66",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "диск": {
+   "okpd2": "25.73.20.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "диффузор": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "длинногубц": {
+   "okpd2": "25.73.30.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "дозиметр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "долот": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "домкрат": {
+   "okpd2": "28.22.11.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "дрел": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "дымоуловител": {
+   "okpd2": "27.90.32.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "емк": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "жал": {
+   "okpd2": "27.90.32.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "жидк": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "жир": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "завод": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "заклепочник": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "затвор": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "звен": {
+   "okpd2": "28.22.18.390",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "зенкер": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "зенковк": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "зубил": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "зубр": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "измерени": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "измерител": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "инвертор": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "индикатор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "инструмент": {
+   "okpd2": "25.73.60.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "источник": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "кабелерез": {
+   "okpd2": "25.73.30.164",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "калибр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "калибратор": {
+   "okpd2": "26.51.5",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "канат": {
+   "okpd2": "28.24.12.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "канифол": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "карандаш": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "катушк": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "кельм": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "керн": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кернер": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кирк": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кислот": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кисточк": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "киянк": {
+   "okpd2": "25.73.30.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "клапан": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "кле": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "клещ": {
+   "okpd2": "25.73.30.166",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "клупп": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ключ": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кобальт": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ковш": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "колес": {
+   "okpd2": "25.73.30.249",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "коллектор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "колун": {
+   "okpd2": "25.73.10.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "комплекс": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "компрессометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кондуктометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "контейнер": {
+   "okpd2": "28.22.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "контроллер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кордщетк": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "корзин": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "коронк": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "корщетк": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "краскопульт": {
+   "okpd2": "28.29",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кронциркул": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "круг": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "круглогубц": {
+   "okpd2": "25.73.30.162",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "крюк": {
+   "okpd2": "28.22.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "кувалд": {
+   "okpd2": "25.73.60.112",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "курвиметр": {
+   "okpd2": "25.73.30.249",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "кусачк": {
+   "okpd2": "25.73.30.164",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "кювет": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "лазер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ламп": {
+   "okpd2": "28.99.39.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "латун": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "лезви": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "линейк": {
+   "okpd2": "26.51.33.141",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "лобзик": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "локатор": {
+   "okpd2": "26.51.66.121",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "лом": {
+   "okpd2": "25.73.30.299",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "люксметр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "макловиц": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "малк": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "манометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "мастерок": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "машин": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "машинк": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "маяк": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "мегаомметр": {
+   "okpd2": "26.51.66.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "металлоискател": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "метеокомплект": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "метр": {
+   "okpd2": "26.51.33.141",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "метрошток": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "метчик": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "метчикодержател": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "мид": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "микрометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "миксер": {
+   "okpd2": "28.24.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "мишен": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "молоток": {
+   "okpd2": "25.73.30.141",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "мультиметр": {
+   "okpd2": "26.51.43.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "мультитул": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "нагрузк": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "надфил": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "напильник": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "насадк": {
+   "okpd2": "28.24.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "нивелир": {
+   "okpd2": "26.51.66.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "нит": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "нитрат": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "нож": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ножниц": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ножовк": {
+   "okpd2": "25.73.20.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "нутромер": {
+   "okpd2": "26.51.33.134",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "образец": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "олов": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "оловоотсос": {
+   "okpd2": "28.29.70.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "оникс": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "оплетк": {
+   "okpd2": "24.45.30.390",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "оправк": {
+   "okpd2": "23.91.11.130",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "опрессовщик": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "органайзер": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ось": {
+   "okpd2": "28.22.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "отвертк": {
+   "okpd2": "25.73.30.230",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "отвес": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "отражател": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "очистител": {
+   "okpd2": "27.90.32.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пад": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пайк": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пакер": {
+   "okpd2": "25.99.29.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "панел": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "пассатиж": {
+   "okpd2": "25.73.30.163",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "паст": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "паяльник": {
+   "okpd2": "25.73.30.293",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "переходник": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "перфоратор": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пзр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пик": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пилк": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "пинпоинтер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пинцет": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пирометр": {
+   "okpd2": "26.51.51.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "плашк": {
+   "okpd2": "25.73.40.130",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "плашкодержател": {
+   "okpd2": "25.73.30.184",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "плиткорез": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "плоскогубц": {
+   "okpd2": "25.73.30.161",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пневмогайковерт": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пневмодрел": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "подложк": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "подошв": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "подставк": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "подъемник": {
+   "okpd2": "28.22.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "полотн": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "полуавтомат": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "полутерок": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пос": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "построител": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "правил": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "преднагревател": {
+   "okpd2": "25.73.30.293",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "преобразовател": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "прибор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "привод": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "приемник": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "призм": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пробник": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "пробойник": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "провод": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "проволок": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "прокат": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "прокладк": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "просекател": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "прутк": {
+   "okpd2": "25.93.15",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "пруток": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пульт": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пункт": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "пшм": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "радиусомер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "развертк": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "разъ": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "раскладк": {
+   "okpd2": "32.99.59",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рашпил": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "регулятор": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "редуктор": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "резак": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "резец": {
+   "okpd2": "25.73.4",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "резчик": {
+   "okpd2": "28.99.39.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "резьбомер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "резьбофрез": {
+   "okpd2": "25.73.40.160",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рейсмус": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рел": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "реноватор": {
+   "okpd2": "25.73.60.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рефрактометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рн": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рубанок": {
+   "okpd2": "25.73.30.210",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "рукав": {
+   "okpd2": "28.29.84.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рукоят": {
+   "okpd2": "25.73.30.230",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рукоятк": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "рулетк": {
+   "okpd2": "26.51.33.199",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "рулон": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "самоклеящиес": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "сверл": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "светозар": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "сеткодержател": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "сибртех": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "сигнализатор": {
+   "okpd2": "26.51.43.116",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "скарпел": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "склерометр": {
+   "okpd2": "26.51.66.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "солемер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "соп": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "сопл": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "споттер": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "спр": {
+   "okpd2": "24.45.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "стабилизатор": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "стабилитрон": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "стамеск": {
+   "okpd2": "25.73.30.210",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "стеклодомкрат": {
+   "okpd2": "25.73.60",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "стеклорез": {
+   "okpd2": "25.73.60",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "степлер": {
+   "okpd2": "25.73.30.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "стержен": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "стержн": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "стриппер": {
+   "okpd2": "25.73.40.290",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "струбцин": {
+   "okpd2": "25.73.30.223",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "стусл": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "счетчик": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "таймер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "тал": {
+   "okpd2": "28.22.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "талреп": {
+   "okpd2": "28.22.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "тарелк": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "тахеометр": {
+   "okpd2": "26.51.12.113",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "тачк": {
+   "okpd2": "28.22.18.390",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "тележк": {
+   "okpd2": "28.22.18.390",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "теодолит": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "терк": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "терминал": {
+   "okpd2": "26.51.52.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термоанемометр": {
+   "okpd2": "26.51.53.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термовалик": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термогигрометр": {
+   "okpd2": "26.51.51.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термодатчик": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термоманометр": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термопар": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "термопистолет": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "термопреобразовател": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "тестер": {
+   "okpd2": "26.51.66.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "тиск": {
+   "okpd2": "25.73.30.221",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "толщиномер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "тонкогубц": {
+   "okpd2": "25.73.30.161",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "топор": {
+   "okpd2": "25.73.10.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "топорищ": {
+   "okpd2": "25.73.10.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "точил": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "траверс": {
+   "okpd2": "28.22.18.390",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "трансформатор": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "трассоискател": {
+   "okpd2": "26.51.66.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "трещетк": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "трещотк": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "триггер": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "трубк": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "трубогиб": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "труборасширител": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "труборез": {
+   "okpd2": "25.73.30",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "угломер": {
+   "okpd2": "26.51.66",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "удлинител": {
+   "okpd2": "25.73.30.176",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "уклономер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "уровен": {
+   "okpd2": "26.51.66.190",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "уровнемер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "ушм": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "фен": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "фетр": {
+   "okpd2": "25.73.20.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "флюс": {
+   "okpd2": "20.59.56.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "франкфурт": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "фрез": {
+   "okpd2": "25.73.40.160",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "фрезер": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "хвостовик": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "цанг": {
+   "okpd2": "27.90.31.110",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "цеп": {
+   "okpd2": "25.73.20.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "цикл": {
+   "okpd2": "25.73.30.210",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "циркул": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "частотомер": {
+   "okpd2": "26.51.45.115",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "чаш": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "чашк": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шабер": {
+   "okpd2": "25.73.60",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шаблон": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шарошк": {
+   "okpd2": "25.73.40.160",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шестигранник": {
+   "okpd2": "25.73.30.171",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шкурк": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлиф": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлифкруг": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлифлент": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлифлист": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлифмашин": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлифтик": {
+   "okpd2": "25.73.30.210",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шлифшкурк": {
+   "okpd2": "23.91.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шпател": {
+   "okpd2": "25.73.30.299",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штабелер": {
+   "okpd2": "28.22.14.169",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штангельциркул": {
+   "okpd2": "26.51.33.121",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штангенглубиномер": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штангенрейсмас": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штангенциркул": {
+   "okpd2": "26.51.33.121",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штатив": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "штроборез": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шубк": {
+   "okpd2": "32.91.19",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шумомер": {
+   "okpd2": "26.51.53.160",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "шуруповерт": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "щуп": {
+   "okpd2": "26.51.33",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "экстрактор": {
+   "okpd2": "23.91.11",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 2
+  },
+  "экструдер": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "электрод": {
+   "okpd2": "25.93.15.120",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "электрододержател": {
+   "okpd2": "28.24.21",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "электролобзик": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "электроножниц": {
+   "okpd2": "28.24.1",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "электропил": {
+   "okpd2": "25.73.60",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "электрорубанок": {
+   "okpd2": "28.24.11.000",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  },
+  "энкор": {
+   "okpd2": "25.73.40",
+   "domain": "tools",
+   "cards": 3,
+   "agree": 3
+  }
+ }
+}

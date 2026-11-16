@@ -1,0 +1,13 @@
+.venv
+venv
+__pycache__
+*.py[cod]
+.ruff_cache
+.pytest_cache
+.git
+.idea
+.vscode
+.DS_Store
+settings.yaml
+tests
+*.log

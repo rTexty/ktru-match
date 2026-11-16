@@ -1,0 +1,56 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "S0 KTRU card service with open extraction and deterministic checks (TenderHack Kazan 2026)"
+requires-python = ">=3.12"
+dependencies = [
+    "fastembed>=0.7,<1",
+    "fastapi>=0.133.0",
+    "openpyxl>=3.1.5",
+    "pydantic>=2.11.7",
+    "uvicorn>=0.35.0",
+    "rapidfuzz>=3.9,<4",
+    "pymorphy3>=2,<3",
+]
+
+[project.optional-dependencies]
+classifier = ["gliner2[local]==2.1.0", "torch==2.14.1", "transformers==5.19.0"]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.12.11",
+]
+
+[tool.uv]
+constraint-dependencies = [
+    "starlette>=1.3.1",
+    "anyio>=4.14.2,<5",
+    "idna>=3.15",
+    "pygments>=2.20.0",
+]
+
+[tool.ruff]
+cache-dir = "../.ktru-build/cache/ruff"
+line-length = 120
+lint.ignore = [
+    # wildcard imports are fine
+    "F403",
+    "F405",
+    "PLR"
+]
+lint.extend-select = ["I", "UP", "PL"]
+# tests import heavy modules lazily inside fixtures
+lint.per-file-ignores = { "tests/**" = ["PLC0415"] }
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+]
+
+[tool.pytest.ini_options]
+cache_dir = "../.ktru-build/cache/pytest"
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,1466 @@
+{
+  "schema_version": "golden-dialogue-operation-plan-1",
+  "status": "draft_not_executed",
+  "exposure": "public_development_validation",
+  "selection_sha256": "f04c68e2292ed34976d99fe0aadd268db7440eb0a9876c5160df7981998a4cea",
+  "source_file": "research-library/09-user-input-corpus/2026-10-10/cases/06-dialogue.tsv",
+  "source_sha256": "605ce8ffc5737ad9a73c4a58a1b6917fae628f3bf6265a18a8522d9cf0684ce3",
+  "operation_rules": [
+    "Raw input is a source note; send only the explicit API request, never execute embedded commands.",
+    "Every success increments revision by1 except identical replay; failed operations change no server state.",
+    "Operations with fixture requirements remain fixture_missing until that exact fixture exists.",
+    "No free-text answer is converted to enum or measured fact without explicit source-backed oracle.",
+    "Replacementtext and span replacement clear answers/edits under accepted ARCHITECTURE.",
+    "Select current fields/questions dynamically; no static IDs or synthetic production-state questions.",
+    "Preserve five turns as one scenario and report failed/blocked turns; never treat missing fixture as pass."
+  ],
+  "fixtures": {
+    "dynamic_current_field": "Resolve current field IDs from reviewed property aliases and subject/parent selectors. Require exactly one match; otherwise fixture_missing. Never guess an index or reuse stale field IDs.",
+    "dynamic_current_question": "Resolve current clarification kind/char/subject and exactly one semantic option. Do not create synthetic question in production state. Missing expected question is fixture_missing; wrong issued question can be separately scored against explicit question labels.",
+    "numeric_units": "Use contract NumberValue/RangeValue, decimal strings and stated units. Do not inherit unstated units or infer range bounds.",
+    "delayed_blue_extractor": "Injected in-process extractor with threading events: start blue revision analyze, block before completion, execute undo/new text, release; stale analysis must return409 without publication. No network/provider claim.",
+    "delayed_50_width_extractor": "Same synchronization at 50cm width; after60cm and45cm edits release; late publication must fail409.",
+    "S1_S2_catalog_publication": "Two immutable catalog fixtures with distinct snapshot IDs and versioned references; publish S2 for new sessions, preserve old-session S1. Not implemented in this draft.",
+    "session_store_restart": "Replace process/session store explicitly after captured S1 state. Verify old session returns404 session_expired. Not a silent reset or fake success.",
+    "read_current_session_state": "Use Pipeline.get(session_id) for backend server-state inspection; it reads current state without parse/analyze or revision changes. Browser UI observation remains separate.",
+    "client_response_revision_guard": "Browser fixture keeps newest card on old replay response. Backend cache correctness alone does not prove UI behavior.",
+    "two_tab_draft_observer": "Two independent browser/local draft views sharing server session, capture initial revision; stale tab keeps draft and refreshes without automatic resubmit.",
+    "remove_field_value_action": "Current set_field does not implement deletion: empty string creates a TextValue. Require explicit removal semantics; do not approximate with replace_text, which clears all answers/edits.",
+    "subject_name_edit_action": "Current EditPatch has no targeted subject-name operation. A full text replacement is allowed only when oracle explicitly requests replacement; it clears all answers/edits.",
+    "assertion_subject_move_action": "Current EditPatch cannot move one assertion to a new subject while preserving other claims/history.",
+    "assertion_modality_edit_action": "Current EditPatch has no explicit status/modal relation edit. Text such as not sure must not be treated as a supported categorical field value.",
+    "remove_subject_action": "Current EditPatch has no selective subject deletion.",
+    "free_text_composition_answer": "AnswerRequest supports current option or NumberValue/RangeValue; no free-text composition transport.",
+    "free_text_uncertain_answer": "No free-text uncertain-answer transport; typed TextValue returns422.",
+    "free_chat_refusal_action": "No conversation-message endpoint. Do not send refusal as product replacement text.",
+    "free_chat_fiction_request_action": "No conversation-message endpoint. Do not send fictional request as product replacement text.",
+    "free_chat_model_clarification_action": "No conversation-message endpoint or targeted add-model-and-negative-function command interpreter.",
+    "free_chat_other_variant_action": "No conversation-message endpoint for a distinct variant while preserving current position.",
+    "variant_choice_question_action": "Contract question kinds family/characteristic/conflict/required do not provide a variant-choice action.",
+    "targeted_presence_correction_action": "Needs a current matching editable presence field; otherwise no targeted semantic correction fixture."
+  },
+  "scenarios": [
+    {
+      "group_id": "DLG-G001",
+      "case_ids": [
+        "DLG-001",
+        "DLG-002",
+        "DLG-003",
+        "DLG-004",
+        "DLG-005"
+      ],
+      "domain": "clothing",
+      "status": "fixture_pending_not_run",
+      "steps": [
+        {
+          "case_id": "DLG-001",
+          "turn": 1,
+          "raw_input": "Куртка рабочая, размер 48.",
+          "source_precondition": "Новая сессия; действие: новое описание куртки без сведений о материале.",
+          "source_must": "Сохранить размер 48; материал оставить неизвестным.",
+          "source_forbidden": "Выводить материал или пол из размера.",
+          "operation": {
+            "action": "parse",
+            "session_id": null,
+            "expected_revision": 0,
+            "text": "Куртка рабочая, размер 48.",
+            "request_id_alias": "DLG-G001-turn-1"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Размер"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "48",
+                "unit_name": null
+              },
+              "quote": "размер 48"
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Пол"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive"
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive"
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-002",
+          "turn": 2,
+          "raw_input": "Верх хлопок.",
+          "source_precondition": "После DLG-001 открыт синтетический вопрос о ткани верха; действие: ответ на текущий вопрос.",
+          "source_must": "Добавить хлопок для верха как ответ пользователя; пересчитать привязки.",
+          "source_forbidden": "Приписывать хлопок подкладке или всему изделию без уточнения.",
+          "operation": {
+            "action": "answer",
+            "question_selector": {
+              "kind": "characteristic",
+              "char_name_aliases": [
+                "Материал верха"
+              ],
+              "subject_kind": "part",
+              "resolve_from": "current_card.clarification",
+              "match_count": 1,
+              "subject_label_aliases": [
+                "верх"
+              ]
+            },
+            "revision_source": "current_card",
+            "option_selector": {
+              "label_aliases": [
+                "Хлопок"
+              ],
+              "match_count": 1,
+              "resolve_from": "current_question.options"
+            },
+            "request_id_alias": "DLG-G001-turn-2"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "parent_label_aliases": [
+                "куртка"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "хлопок"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "подкладка"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "хлопок"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_question"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-003",
+          "turn": 3,
+          "raw_input": "Полиэстер, хлопок указал ошибочно.",
+          "source_precondition": "После DLG-002 верх=хлопок; действие: явная правка этого поля в UI.",
+          "source_must": "Заменить активное утверждение о верхе; сохранить историю и пересчитать весь набор кандидатов.",
+          "source_forbidden": "Одновременно применять прежний хлопок и новую исправленную ткань как конфликт.",
+          "operation": {
+            "action": "edit",
+            "patch": {
+              "type": "set_field",
+              "value": "Полиэстер",
+              "label_ru": "Материал"
+            },
+            "field_selector": {
+              "field_label_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "match_count": 1,
+              "resolve_from": "current_card.fields",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "parent_label_aliases": [
+                "куртка"
+              ]
+            },
+            "revision_source": "current_card",
+            "request_id_alias": "DLG-G001-turn-3"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "полиэстер"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "хлопок"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_field"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-004",
+          "turn": 4,
+          "raw_input": "Удалить материал верха; он неизвестен.",
+          "source_precondition": "После DLG-003 верх=полиэстер; действие: удалить значение материала верха в UI.",
+          "source_must": "Снять ограничение по ткани; сохранить размер; вернуть ранее исключенные по ткани варианты в пересчет.",
+          "source_forbidden": "Считать удаление подтверждением отсутствия ткани или хранить полиэстер как активный факт.",
+          "operation": {
+            "action": "edit",
+            "fixture_requirements": [
+              "remove_field_value_action"
+            ],
+            "field_selector": {
+              "field_label_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "match_count": 1,
+              "resolve_from": "current_card.fields",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "parent_label_aliases": [
+                "куртка"
+              ]
+            },
+            "intent": "remove active value; preserve size",
+            "request_id_alias": "DLG-G001-turn-4"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Размер"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "48",
+                "unit_name": null
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "полиэстер"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_field",
+            "remove_field_value_action"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-005",
+          "turn": 5,
+          "raw_input": "Проверил ярлык: верх 65% полиэстер, 35% хлопок.",
+          "source_precondition": "После DLG-004 материал неизвестен; открыт новый вопрос о верхе; действие: ответ на него.",
+          "source_must": "Сохранить состав и доли для верха; связать с новым ответом и пересчитать.",
+          "source_forbidden": "Превращать смесь в один материал или использовать старый идентификатор вопроса.",
+          "operation": {
+            "action": "answer",
+            "fixture_requirements": [
+              "free_text_composition_answer"
+            ],
+            "question_selector": {
+              "kind": "characteristic",
+              "char_name_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "resolve_from": "current_card.clarification",
+              "match_count": 1,
+              "subject_label_aliases": [
+                "верх"
+              ]
+            },
+            "raw_value": "65% полиэстер, 35% хлопок",
+            "request_id_alias": "DLG-G001-turn-5"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Состав"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "верх"
+              ],
+              "value": {
+                "type": "text",
+                "s": "65% полиэстер, 35% хлопок"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "полиэстер"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_question",
+            "free_text_composition_answer"
+          ],
+          "status": "operation_plan_not_run"
+        }
+      ],
+      "step_count": 5
+    },
+    {
+      "group_id": "DLG-G004",
+      "case_ids": [
+        "DLG-016",
+        "DLG-017",
+        "DLG-018",
+        "DLG-019",
+        "DLG-020"
+      ],
+      "domain": "furniture",
+      "status": "fixture_pending_not_run",
+      "steps": [
+        {
+          "case_id": "DLG-016",
+          "turn": 1,
+          "raw_input": "Стул со спинкой, сиденье пластик.",
+          "source_precondition": "Новая сессия; действие: новое описание мебели.",
+          "source_must": "Выделить стул, наличие спинки и материал сиденья.",
+          "source_forbidden": "Распространять пластик на каркас.",
+          "operation": {
+            "action": "parse",
+            "session_id": null,
+            "expected_revision": 0,
+            "text": "Стул со спинкой, сиденье пластик.",
+            "request_id_alias": "DLG-G004-turn-1"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "сиденье"
+              ],
+              "parent_label_aliases": [
+                "стул"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "пластик"
+              },
+              "quote": "Стул со спинкой, сиденье пластик"
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "каркас"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "пластик"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-017",
+          "turn": 2,
+          "raw_input": "Это табурет, слово стул лишнее.",
+          "source_precondition": "После DLG-016 найдены предложения семейства стульев; действие: исправить название товара в UI.",
+          "source_must": "Отметить смену семейства; обновить поиск и сделать прежний итог предварительным.",
+          "source_forbidden": "Сохранять прежнее семейство как доказанную истину.",
+          "operation": {
+            "action": "edit",
+            "fixture_requirements": [
+              "subject_name_edit_action"
+            ],
+            "subject_selector": {
+              "kind": "item",
+              "label": "стул"
+            },
+            "new_label": "табурет",
+            "request_id_alias": "DLG-G004-turn-2"
+          },
+          "required_state": [
+            {
+              "kind": "subject",
+              "subject_kind": "item",
+              "label": "табурет"
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "confirmed_family_from_prior_subject"
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "subject_name_edit_action"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-018",
+          "turn": 3,
+          "raw_input": "Спинки нет; сначала перепутал описание соседнего товара.",
+          "source_precondition": "После DLG-017 активен табурет, но старое наличие спинки еще не разрешено; действие: новое уточнение.",
+          "source_must": "Снять прежнее наличие спинки по явной коррекции; оставить пластиковое сиденье.",
+          "source_forbidden": "Смешивать сведения соседнего товара с текущим или исключать все варианты по двум спинкам.",
+          "operation": {
+            "action": "edit",
+            "fixture_requirements": [
+              "targeted_presence_correction_action"
+            ],
+            "field_selector": {
+              "field_label_aliases": [
+                "Наличие спинки"
+              ],
+              "subject_kind": "item",
+              "match_count": 1,
+              "resolve_from": "current_card.fields"
+            },
+            "value": false,
+            "request_id_alias": "DLG-G004-turn-3"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Наличие спинки"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "bool",
+                "v": false
+              }
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "сиденье"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "пластик"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Наличие спинки"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "bool",
+                "v": true
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_field",
+            "targeted_presence_correction_action"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-019",
+          "turn": 4,
+          "raw_input": "Синий.",
+          "source_precondition": "После DLG-018 табурет без спинки; действие: добавить цвет через поле UI.",
+          "source_must": "Добавить цвет текущему изделию; использовать его для исключения только при подтвержденном различии схем.",
+          "source_forbidden": "Объявлять уникальность по цвету без каталожного основания.",
+          "operation": {
+            "action": "edit",
+            "patch": {
+              "type": "set_field",
+              "value": "Синий",
+              "label_ru": "Цвет"
+            },
+            "field_selector": {
+              "field_label_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "match_count": 1,
+              "resolve_from": "current_card.fields",
+              "if_absent": {
+                "add_unbound_field": true,
+                "label_ru": "Цвет",
+                "subject_kind": "item"
+              }
+            },
+            "revision_source": "current_card",
+            "request_id_alias": "DLG-G004-turn-4"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "синий"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "final_without_exhaustive_scope"
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_field"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-020",
+          "turn": 5,
+          "raw_input": "Вернуть название стул.",
+          "source_precondition": "После DLG-019 пользователь явно меняет поле названия обратно на стул с сохранением иных правок; действие: правка в UI.",
+          "source_must": "Создать новую ревизию и повторить поиск по стулу; отсутствие спинки и цвет сохранить как активные уточнения.",
+          "source_forbidden": "Вернуть целиком старую карточку и потерять более поздние независимые правки.",
+          "operation": {
+            "action": "edit",
+            "fixture_requirements": [
+              "subject_name_edit_action"
+            ],
+            "subject_selector": {
+              "kind": "item",
+              "label": "табурет"
+            },
+            "new_label": "стул",
+            "preserve_other_edits": true,
+            "request_id_alias": "DLG-G004-turn-5"
+          },
+          "required_state": [
+            {
+              "kind": "subject",
+              "subject_kind": "item",
+              "label": "стул"
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "синий"
+              }
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Наличие спинки"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "bool",
+                "v": false
+              }
+            }
+          ],
+          "forbidden_state": [],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "subject_name_edit_action"
+          ],
+          "status": "operation_plan_not_run"
+        }
+      ],
+      "step_count": 5
+    },
+    {
+      "group_id": "DLG-G014",
+      "case_ids": [
+        "DLG-066",
+        "DLG-067",
+        "DLG-068",
+        "DLG-069",
+        "DLG-070"
+      ],
+      "domain": "clothing",
+      "status": "fixture_pending_not_run",
+      "steps": [
+        {
+          "case_id": "DLG-066",
+          "turn": 1,
+          "raw_input": "Куртка красная.",
+          "source_precondition": "Новая сессия; действие: описание куртки; анализ принятого текста может выполняться позже.",
+          "source_must": "Принять исходный текст и его ревизию; сохранить красный цвет.",
+          "source_forbidden": "Разрешить позднему результату чужой ревизии менять это состояние.",
+          "operation": {
+            "action": "parse",
+            "session_id": null,
+            "expected_revision": 0,
+            "text": "Куртка красная.",
+            "request_id_alias": "DLG-G014-turn-1"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "красный"
+              },
+              "quote": "Куртка красная"
+            }
+          ],
+          "forbidden_state": [],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-067",
+          "turn": 2,
+          "raw_input": "Синий.",
+          "source_precondition": "После DLG-066 первая ревизия принята; действие: изменить цвет на синий в UI с текущей ревизией.",
+          "source_must": "Создать новую ревизию с синей правкой; сохранить историю красного источника.",
+          "source_forbidden": "Скрыто заменить исходный текст или оставить красный активным без учета правки.",
+          "operation": {
+            "action": "edit",
+            "patch": {
+              "type": "set_field",
+              "value": "Синий",
+              "label_ru": "Цвет"
+            },
+            "field_selector": {
+              "field_label_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "match_count": 1,
+              "resolve_from": "current_card.fields"
+            },
+            "revision_source": "current_card",
+            "request_id_alias": "DLG-G014-turn-2"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "синий"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "красный"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "delayed_blue_extractor"
+          ],
+          "status": "operation_plan_not_run",
+          "after_operations": [
+            {
+              "action": "analyze",
+              "execution": "background",
+              "hold_on": "delayed_blue_extractor",
+              "save_request_as": "blue_analysis"
+            }
+          ]
+        },
+        {
+          "case_id": "DLG-068",
+          "turn": 3,
+          "raw_input": "Отменить синюю правку.",
+          "source_precondition": "После DLG-067 пользователь нажал UI undo синего цвета; действие: явная отмена.",
+          "source_must": "Вернуть красный в новой ревизии; инвалидировать идентификаторы прежних вопросов и правок.",
+          "source_forbidden": "Повторно использовать номер ревизии DLG-066.",
+          "operation": {
+            "action": "undo",
+            "revision_source": "current_card",
+            "request_id_alias": "DLG-G014-turn-3"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "красный"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "синий"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-069",
+          "turn": 4,
+          "raw_input": "Куртка зеленая.",
+          "source_precondition": "После DLG-068 принят красный; пользователь вводит новый текст, затем приходит анализ синей ревизии DLG-067; действие: новое описание.",
+          "source_must": "Сохранить зеленый в новой ревизии; отбросить публикацию анализа устаревшей синей ревизии.",
+          "source_forbidden": "Перезаписать зеленый синим при позднем ответе модели.",
+          "operation": {
+            "action": "edit",
+            "patch": {
+              "type": "replace_text",
+              "text": "Куртка зеленая."
+            },
+            "revision_source": "current_card",
+            "clears_answers_and_edits": true,
+            "request_id_alias": "DLG-G014-turn-4"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "зеленый"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "синий"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "delayed_blue_extractor"
+          ],
+          "status": "operation_plan_not_run",
+          "after_operations": [
+            {
+              "action": "fixture_release",
+              "fixture": "delayed_blue_extractor"
+            },
+            {
+              "action": "await_background",
+              "saved_request": "blue_analysis",
+              "expected_error": {
+                "http_status": 409,
+                "code": "stale_revision"
+              },
+              "server_revision_delta": 0
+            }
+          ]
+        },
+        {
+          "case_id": "DLG-070",
+          "turn": 5,
+          "raw_input": "Отменить зеленое описание.",
+          "source_precondition": "После DLG-069 текущий текст зеленый, поздний синий не принят; действие: UI undo последнего изменения текста.",
+          "source_must": "В новой ревизии восстановить красное состояние перед DLG-069.",
+          "source_forbidden": "Восстановить синий из отвергнутого анализа или вернуть устаревшие идентификаторы.",
+          "operation": {
+            "action": "undo",
+            "revision_source": "current_card",
+            "request_id_alias": "DLG-G014-turn-5"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "красный"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "зеленый"
+              }
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Цвет"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "enum",
+                "label": "синий"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [],
+          "status": "operation_plan_not_run"
+        }
+      ],
+      "step_count": 5
+    },
+    {
+      "group_id": "DLG-G024",
+      "case_ids": [
+        "DLG-116",
+        "DLG-117",
+        "DLG-118",
+        "DLG-119",
+        "DLG-120"
+      ],
+      "domain": "tools",
+      "status": "fixture_pending_not_run",
+      "steps": [
+        {
+          "case_id": "DLG-116",
+          "turn": 1,
+          "raw_input": "Молоток не менее 500 г, ручка не пластиковая.",
+          "source_precondition": "Новая сессия; действие: описание с численной границей и отрицанием материала.",
+          "source_must": "Различить нижнюю границу массы и отрицание пластика ручки.",
+          "source_forbidden": "Трактовать не менее как отрицание массы или выбирать дерево по не пластиковая.",
+          "operation": {
+            "action": "parse",
+            "session_id": null,
+            "expected_revision": 0,
+            "text": "Молоток не менее 500 г, ручка не пластиковая.",
+            "request_id_alias": "DLG-G024-turn-1"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "ge",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "500",
+                "unit_name": "г"
+              },
+              "quote": "Молоток не менее 500 г"
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "negative",
+              "subject_label_aliases": [
+                "ручка"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "пластик"
+              },
+              "quote": "ручка не пластиковая"
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "ручка"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "дерево"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-117",
+          "turn": 2,
+          "raw_input": "Не уверен насчет пластика: покрытие резиновое, внутри не знаю.",
+          "source_precondition": "После DLG-116 ручка явно не пластиковая; действие: изменить статус этого утверждения в UI.",
+          "source_must": "Снять уверенное отрицание основы ручки; отдельно сохранить резиновое покрытие.",
+          "source_forbidden": "Выводить основу из покрытия или оставлять прежнее отрицание как строгое ограничение.",
+          "operation": {
+            "action": "edit",
+            "fixture_requirements": [
+              "assertion_modality_edit_action"
+            ],
+            "assertion_selector": {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "negative",
+              "subject_label_aliases": [
+                "ручка"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "пластик"
+              }
+            },
+            "new_status": "ambiguous",
+            "extra_fact": {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "покрытие"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "резина"
+              }
+            },
+            "request_id_alias": "DLG-G024-turn-2"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "покрытие"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "резина"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "negative",
+              "subject_label_aliases": [
+                "ручка"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "пластик"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "assertion_modality_edit_action"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-118",
+          "turn": 3,
+          "raw_input": "Основа стеклопластик, резина только снаружи.",
+          "source_precondition": "После DLG-117 открыт синтетический вопрос об основе ручки; действие: ответ.",
+          "source_must": "Разделить основу и покрытие; сохранить стеклопластик как ответ.",
+          "source_forbidden": "Считать резину альтернативой стеклопластику одного и того же слоя.",
+          "operation": {
+            "action": "answer",
+            "question_selector": {
+              "kind": "characteristic",
+              "char_name_aliases": [
+                "Материал основы"
+              ],
+              "subject_kind": "part",
+              "resolve_from": "current_card.clarification",
+              "match_count": 1,
+              "subject_label_aliases": [
+                "ручка"
+              ]
+            },
+            "revision_source": "current_card",
+            "option_selector": {
+              "label_aliases": [
+                "Стеклопластик"
+              ],
+              "match_count": 1,
+              "resolve_from": "current_question.options"
+            },
+            "request_id_alias": "DLG-G024-turn-3"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "основа"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "стеклопластик"
+              }
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Материал"
+              ],
+              "subject_kind": "part",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "subject_label_aliases": [
+                "покрытие"
+              ],
+              "value": {
+                "type": "enum",
+                "label": "резина"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "conflict_between_distinct_layers"
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_question"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-119",
+          "turn": 4,
+          "raw_input": "Масса не более 500 г, я перепутал слова.",
+          "source_precondition": "После DLG-118 масса не менее 500 г; действие: поправить численную формулировку.",
+          "source_must": "Заменить нижнюю границу верхней включенной границей; пересчитать из полного множества.",
+          "source_forbidden": "Оставить одновременно не менее и не более как случайное равенство 500.",
+          "operation": {
+            "action": "edit",
+            "patch": {
+              "type": "set_field",
+              "value": "не более 500 г",
+              "label_ru": "Масса"
+            },
+            "field_selector": {
+              "field_label_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "match_count": 1,
+              "resolve_from": "current_card.fields"
+            },
+            "revision_source": "current_card",
+            "request_id_alias": "DLG-G024-turn-4"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "le",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "500",
+                "unit_name": "г"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "ge",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "500",
+                "unit_name": "г"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "dynamic_current_field"
+          ],
+          "status": "operation_plan_not_run"
+        },
+        {
+          "case_id": "DLG-120",
+          "turn": 5,
+          "raw_input": "И это не точно. Знаю только, что примерно полкило.",
+          "source_precondition": "После DLG-119 масса не более 500 г; действие: снять уверенную границу через UI.",
+          "source_must": "Сохранить приблизительное значение без выдуманного допуска; убрать строгое ограничение верхней границы.",
+          "source_forbidden": "Использовать 500 г как точное равенство или сохранять снятую границу.",
+          "operation": {
+            "action": "edit",
+            "fixture_requirements": [
+              "assertion_modality_edit_action"
+            ],
+            "field_selector": {
+              "field_label_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "match_count": 1,
+              "resolve_from": "current_card.fields"
+            },
+            "new_operator": "approx",
+            "new_value": {
+              "type": "number",
+              "x": "500",
+              "unit_name": "г"
+            },
+            "request_id_alias": "DLG-G024-turn-5"
+          },
+          "required_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "status": "ambiguous",
+              "operator": "approx",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "500",
+                "unit_name": "г"
+              }
+            }
+          ],
+          "forbidden_state": [
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "le",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "500",
+                "unit_name": "г"
+              }
+            },
+            {
+              "kind": "assertion",
+              "property_aliases": [
+                "Масса"
+              ],
+              "subject_kind": "item",
+              "status": "supported",
+              "operator": "eq",
+              "polarity": "positive",
+              "value": {
+                "type": "number",
+                "x": "500",
+                "unit_name": "г"
+              }
+            }
+          ],
+          "revision_delta": 1,
+          "expected_error": null,
+          "fixture_requirements": [
+            "assertion_modality_edit_action",
+            "dynamic_current_field"
+          ],
+          "status": "operation_plan_not_run"
+        }
+      ],
+      "step_count": 5
+    }
+  ],
+  "excluded_adjudication": [
+    {
+      "group_id": "DLG-G013",
+      "case_id": "DLG-065",
+      "status": "needs_adjudication",
+      "reason": "New fulltext clears active answers/edits. Bank asks to preserve independent plastic answer after replacement and create conflict."
+    },
+    {
+      "group_id": "DLG-G029",
+      "case_id": "DLG-144",
+      "status": "needs_adjudication",
+      "reason": "Replacementtext clears independent answer. Bank asks to preserve it."
+    }
+  ],
+  "minimal_executable_subset_advice": "All four selected scenarios retain five turns; unsupported fixtures remain fixture_missing."
+}

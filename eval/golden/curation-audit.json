@@ -1,0 +1,972 @@
+{
+  "schema_version": "judging-curation-audit-2",
+  "created": "2026-10-10",
+  "skills_applied": [
+    "analysis-planning",
+    "data-quality-audit"
+  ],
+  "judging_source": {
+    "path": "research-library/07-source-data/judging-notes-2026-10-10.md",
+    "sha256": "42194056bd31475b8b492bd9f36fc06c1d1f82264ef1c625f9b8a35738a8e1ba",
+    "type": "user-supplied summary of a recording; likely test guidance, not official hidden test labels"
+  },
+  "previous_release": {
+    "records": 300,
+    "single": 240,
+    "dialogue": 60,
+    "groups": 102,
+    "case_sha256": "4ef4610cf2b18948101ffd76d7efd0999d3af49ed3544f68235193cbc6836424",
+    "backup": ".ktru-build/golden-redesign-20261010/original-golden"
+  },
+  "current_release": {
+    "records": 300,
+    "single": 280,
+    "dialogue": 20,
+    "dialogue_scenarios": 4,
+    "groups": 284
+  },
+  "quality_dimensions": {
+    "completeness": {
+      "labelled_single_domains": 280,
+      "single_behavior_oracles": 280,
+      "full_dialogue_scenarios": 4,
+      "required_facts": 328,
+      "forbidden_facts": 199,
+      "preserve_quotes": 275,
+      "exact_ktru_code_labels": 0
+    },
+    "accuracy": {
+      "basis": "Source text and original must/forbidden plus supplied judging notes; never inferred from product output.",
+      "annotation_review": "One curator; no independent KTRU expert review claimed."
+    },
+    "consistency": {
+      "source_bank_hashes": "pinned",
+      "dialogue_operations": "original full five-turn plans",
+      "source_strings": "unchanged",
+      "source_bank_category_corrections": []
+    },
+    "uniqueness": {
+      "duplicate_case_ids": 0,
+      "duplicate_single_texts": 0,
+      "single_source_group_siblings": 0,
+      "near_pairs": []
+    },
+    "validity": {
+      "source_domains": {
+        "clothing": 94,
+        "furniture": 93,
+        "tools": 93
+      },
+      "gold_domains": {
+        "clothing": 94,
+        "furniture": 93,
+        "tools": 93
+      },
+      "length_min": 8,
+      "length_max": 278,
+      "length_bands": {
+        "medium_50_149": 176,
+        "short_1_49": 91,
+        "long_150_300": 13
+      }
+    },
+    "timeliness": {
+      "guidance_date": "2026-10-10",
+      "catalog_versions": "Not frozen by this behavior dataset; actual code/version checks need an authoritative snapshot."
+    }
+  },
+  "judging_adjudications": [
+    {
+      "case_id": "LANG-031",
+      "before": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "высота"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стол",
+                "стола"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "семь пять сантиметров"
+        ],
+        "no_final": true,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "высота"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стол",
+                "стола"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "семь пять сантиметров"
+        ],
+        "domain": "furniture"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "LANG-088",
+      "before": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "мощность"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "дрель",
+                "дрели"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "7O0 Вт"
+        ],
+        "no_final": true,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "мощность"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "дрель",
+                "дрели"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "7O0 Вт"
+        ],
+        "domain": "tools"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "NUM-049",
+      "before": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "температура",
+              "рабочая температура",
+              "температура эксплуатации"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "куртка",
+                "куртки"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "до -20 °C",
+          "границу не уточнили"
+        ],
+        "no_final": true,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "температура",
+              "рабочая температура",
+              "температура эксплуатации"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "куртка",
+                "куртки"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "до -20 °C",
+          "границу не уточнили"
+        ],
+        "domain": "clothing"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "NUM-129",
+      "before": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "масса",
+              "вес"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "молоток",
+                "молотка"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "1/2",
+          "единицы и смысл дроби не указаны"
+        ],
+        "no_final": false,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "масса",
+              "вес"
+            ],
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "молоток",
+                "молотка"
+              ]
+            },
+            "value_types": [
+              "number",
+              "range"
+            ]
+          }
+        ],
+        "preserve_quotes": [
+          "1/2",
+          "единицы и смысл дроби не указаны"
+        ],
+        "domain": "tools"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "SUBJ-103",
+      "before": {
+        "required": [
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "синий"
+            },
+            "operator": "eq",
+            "polarity": "uncertain",
+            "status": [
+              "ambiguous"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "quote": "бывает синий или зеленый"
+          },
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "зеленый"
+            },
+            "operator": "eq",
+            "polarity": "uncertain",
+            "status": [
+              "ambiguous"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "quote": "бывает синий или зеленый"
+          }
+        ],
+        "forbidden": [
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "синий"
+            }
+          },
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "зеленый"
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "покупатель выбирает один цвет"
+        ],
+        "no_final": false,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "синий"
+            },
+            "operator": "eq",
+            "polarity": "uncertain",
+            "status": [
+              "ambiguous"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "quote": "бывает синий или зеленый"
+          },
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "зеленый"
+            },
+            "operator": "eq",
+            "polarity": "uncertain",
+            "status": [
+              "ambiguous"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "quote": "бывает синий или зеленый"
+          }
+        ],
+        "forbidden": [
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "синий"
+            }
+          },
+          {
+            "property": [
+              "Цвет",
+              "цвет",
+              "Цвет изделия"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул",
+                "стула",
+                "стулу",
+                "стуле",
+                "стулья",
+                "стульев"
+              ]
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "зеленый"
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "покупатель выбирает один цвет"
+        ],
+        "domain": "furniture"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "COMBO-015",
+      "before": {
+        "required": [
+          {
+            "property": [
+              "Материал",
+              "Состав"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "Металл"
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул"
+              ]
+            },
+            "quote": "Стул металлический"
+          }
+        ],
+        "forbidden": [],
+        "preserve_quotes": [
+          "Из ваших трёх вариантов подходит один."
+        ],
+        "no_final": true
+      },
+      "after": {
+        "required": [
+          {
+            "property": [
+              "Материал",
+              "Состав"
+            ],
+            "value": {
+              "type": "enum",
+              "label": "Металл"
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "стул"
+              ]
+            },
+            "quote": "Стул металлический"
+          }
+        ],
+        "forbidden": [],
+        "preserve_quotes": [
+          "Из ваших трёх вариантов подходит один."
+        ],
+        "domain": "furniture"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "COMBO-027",
+      "before": {
+        "required": [
+          {
+            "property": [
+              "Светоотражающая нашивка",
+              "Наличие светоотражающей нашивки"
+            ],
+            "value": {
+              "type": "bool",
+              "v": true
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "package",
+              "label": [
+                "упаковка"
+              ],
+              "parent_label": [
+                "куртка"
+              ]
+            },
+            "quote": "Светоотражающая нашивка есть на упаковке"
+          }
+        ],
+        "forbidden": [
+          {
+            "property": [
+              "Светоотражающая нашивка",
+              "Наличие светоотражающей нашивки"
+            ],
+            "value": {
+              "type": "bool",
+              "v": true
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "куртка"
+              ]
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "Куртка не без капюшона, но капюшон сейчас не нашли."
+        ],
+        "no_final": false,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [
+          {
+            "property": [
+              "Светоотражающая нашивка",
+              "Наличие светоотражающей нашивки"
+            ],
+            "value": {
+              "type": "bool",
+              "v": true
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "package",
+              "label": [
+                "упаковка"
+              ],
+              "parent_label": [
+                "куртка"
+              ]
+            },
+            "quote": "Светоотражающая нашивка есть на упаковке"
+          }
+        ],
+        "forbidden": [
+          {
+            "property": [
+              "Светоотражающая нашивка",
+              "Наличие светоотражающей нашивки"
+            ],
+            "value": {
+              "type": "bool",
+              "v": true
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "куртка"
+              ]
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "Куртка не без капюшона, но капюшон сейчас не нашли."
+        ],
+        "domain": "clothing"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "COMBO-041",
+      "before": {
+        "required": [
+          {
+            "property": [
+              "Модель"
+            ],
+            "value": {
+              "type": "text",
+              "s": "A12"
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "шуруповёрт"
+              ]
+            },
+            "quote": "модель A12"
+          }
+        ],
+        "forbidden": [
+          {
+            "property": [
+              "Напряжение",
+              "Напряжение питания"
+            ],
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item"
+            }
+          },
+          {
+            "property": [
+              "Аккумулятор в комплекте",
+              "Наличие аккумулятора"
+            ],
+            "value": {
+              "type": "bool",
+              "v": true
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item"
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "https://example.invalid/product/A12",
+          "характеристики там. Здесь знаю только модель A12."
+        ],
+        "no_final": false,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [
+          {
+            "property": [
+              "Модель"
+            ],
+            "value": {
+              "type": "text",
+              "s": "A12"
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item",
+              "label": [
+                "шуруповёрт"
+              ]
+            },
+            "quote": "модель A12"
+          }
+        ],
+        "forbidden": [
+          {
+            "property": [
+              "Напряжение",
+              "Напряжение питания"
+            ],
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item"
+            }
+          },
+          {
+            "property": [
+              "Аккумулятор в комплекте",
+              "Наличие аккумулятора"
+            ],
+            "value": {
+              "type": "bool",
+              "v": true
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "item"
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "https://example.invalid/product/A12",
+          "характеристики там. Здесь знаю только модель A12."
+        ],
+        "domain": "tools"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    },
+    {
+      "case_id": "COMBO-047",
+      "before": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "Количество",
+              "Количество изделий",
+              "Количество в комплекте"
+            ],
+            "value": {
+              "type": "number",
+              "x": "2"
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "set"
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "либо две дрели, либо один набор отвёрток",
+          "Решение завтра. Сейчас выбираем предложение."
+        ],
+        "no_final": false,
+        "clarification_required": true
+      },
+      "after": {
+        "required": [],
+        "forbidden": [
+          {
+            "property": [
+              "Количество",
+              "Количество изделий",
+              "Количество в комплекте"
+            ],
+            "value": {
+              "type": "number",
+              "x": "2"
+            },
+            "operator": "eq",
+            "polarity": "positive",
+            "status": [
+              "supported"
+            ],
+            "subject": {
+              "kind": "set"
+            }
+          }
+        ],
+        "preserve_quotes": [
+          "либо две дрели, либо один набор отвёрток",
+          "Решение завтра. Сейчас выбираем предложение."
+        ],
+        "domain": "tools"
+      },
+      "reason": "Missing/uncertain values alone do not establish code ambiguity; no unconditional no_final or required wizard without a catalog oracle."
+    }
+  ],
+  "limitations": [
+    "Public synthetic validation; not independent holdout.",
+    "pass_checks assesses explicit anchors, not all manual must/forbidden clauses.",
+    "Active-version selection, unique code with missing required fields, source priority, warnings, minimum questions and UI ignore/correct require manual/catalog acceptance.",
+    "Dialogue fixture_missing is not a pass; browser behavior is not inferred from backend responses."
+  ]
+}

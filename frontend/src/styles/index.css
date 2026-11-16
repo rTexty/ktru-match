@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/open-sans';
+
+/* Portal Postavshikov design system (Figma "Portal Postavshikov (catalog)": 00_Colors, 03_Buttons & Controls). */
+@theme {
+  --color-brand: #264b82; /* Main Blue */
+  --color-brand-dark: #1b3966;
+  --color-brand-soft: #e7eef7; /* Pale Blue */
+  --color-action: #db2b21; /* Red */
+  --color-action-dark: #bf241b;
+  --color-page: #e7eef7;
+  --color-line: #d4dbe6; /* Gray Blue */
+  --color-ink: #1a1a1a; /* Black */
+
+  /* Status colours from the secondary palette. */
+  --color-emerald-600: #0d9b68;
+  --color-red-500: #db2b21;
+  --color-red-600: #db2b21;
+  --color-amber-500: #f67319;
+
+  /* The portal uses square corners everywhere except round controls. */
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+}
+
+:root {
+  color-scheme: light;
+  font-family:
+    'Open Sans Variable',
+    'Open Sans',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    Arial,
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  color: var(--color-ink);
+}
+
+button,
+summary,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button:not(:disabled),
+summary {
+  cursor: pointer;
+}
+:where(button, a, summary, input, textarea):focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 3px;
+}
+::selection {
+  background: #d5e1f1;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

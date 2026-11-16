@@ -1,0 +1,7 @@
+@import '../styles/index.css';
+@source '.';
+@source '../components/ktru';
+
+.demo-repo-link:focus-visible {
+  outline-color: white;
+}

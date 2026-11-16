@@ -1,0 +1,18 @@
+name: ktru-match-catalog
+
+services:
+  snapshot:
+    command: ["python", "scripts/snapshot.py", "/input/ktru.zip", "/data/snapshots", "--portal-dir", "/input/portal"]
+    volumes:
+      - type: bind
+        source: "${KTRU_ARCHIVE:-./data/ktru.zip}"
+        target: /input/ktru.zip
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: "${KTRU_PORTAL_DIR:-./data/portal}"
+        target: /input/portal
+        read_only: true
+        bind:
+          create_host_path: false

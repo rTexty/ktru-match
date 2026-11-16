@@ -1,0 +1,103 @@
+# Local demo: snapshot -> API -> web. See README for the catalog and model options.
+name: ktru-match
+
+x-backend: &backend
+  build:
+    context: ./backend
+  image: ktru-match-backend:local
+
+services:
+  snapshot:
+    <<: *backend
+    command:
+      - /bin/sh
+      - -ec
+      - |
+        if [ ! -f /data/snapshots/current/manifest.json ]; then
+          exec python -m src.ktru.catalog.build /input/demo /data/snapshots
+        fi
+    healthcheck:
+      disable: true
+    volumes:
+      - snapshots:/data/snapshots
+      - ./demo:/input/demo:ro
+    restart: "no"
+
+  vector-index:
+    profiles: ["hybrid"]
+    <<: *backend
+    depends_on:
+      snapshot:
+        condition: service_completed_successfully
+    command: ["python", "scripts/vector_index.py"]
+    environment:
+      KTRU_SNAPSHOT_DIR: /data/snapshots/current
+      KTRU_BUILD_DIR: /data
+    volumes:
+      - snapshots:/data/snapshots:ro
+      - vectors:/data/vector
+    healthcheck:
+      disable: true
+    restart: "no"
+
+  api:
+    <<: *backend
+    depends_on:
+      snapshot:
+        condition: service_completed_successfully
+    environment:
+      KTRU_SNAPSHOT_DIR: /data/snapshots/current
+      KTRU_BUILD_DIR: /data
+      KTRU_SEARCH_MODE: ${KTRU_SEARCH_MODE:-lexical}
+      # Optional open-model runtime; passed through only when set in the shell / .env.
+      KTRU_LLM_URL:
+      KTRU_LLM_MODEL:
+      KTRU_LLM_API_KEY:       # Bearer key of an optional inference server
+      KTRU_LLM_CONCURRENCY:   # parallel /analyze calls (default 4); match the model server's slots
+      KTRU_LLM_TIMEOUT:
+      KTRU_LLM_THINKING:      # off for hybrid-thinking models (Qwen3-14B): one fast pass, measured more accurate
+      # Optional semantic family search (Qwen3-Embedding under vLLM): synonyms and out-of-group detection.
+      KTRU_EMBED_URL:
+      KTRU_EMBED_MODEL:
+      KTRU_EMBED_API_KEY:     # defaults to KTRU_LLM_API_KEY
+      KTRU_EMBED_TIMEOUT:
+      KTRU_SEMANTIC_CACHE: ${KTRU_SEMANTIC_CACHE:-/data/semantic}  # family vectors survive restarts
+    volumes:
+      - snapshots:/data/snapshots:ro
+      - vectors:/data/vector:ro
+      - semantic:/data/semantic
+    # Not published on the host (local `uvicorn` dev uses :8010); reach it through web at :8080/api/.
+    expose:
+      - "8010"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./frontend
+    image: ktru-match-web:local
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${KTRU_BIND:-127.0.0.1}:${KTRU_PORT:-8080}:80"
+    restart: unless-stopped
+
+  llm:
+    profiles: ["llm"]
+    image: ollama/ollama:0.6.8
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "127.0.0.1:11434:11434"
+    restart: unless-stopped
+    # GPU (Linux + NVIDIA Container Toolkit): uncomment
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices: [{ driver: nvidia, count: all, capabilities: [gpu] }]
+
+volumes:
+  snapshots:
+  vectors:
+  semantic:
+  ollama:
